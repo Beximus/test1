@@ -51,37 +51,37 @@ function init(){
             //Create Geolocation if Threshold is hit
             if(r.alpha<-20||r.beta<-20||r.gamma<-20){
             	if(r.alpha>130||r.beta>130||r.gamma>130){
-              	// document.body.style.backgroundColor = "red";
+              	document.body.style.color = "red";
               	output.innerHTML = "<p>yeahboi</p>"
 
-              	// map.on('load',function(){
-              	// 	map.addLayer({
-              	// 		"id":"points",
-              	// 		"type": "symbol",
-              	// 		"source": {
-              	// 			"type":"geojson",
-              	// 			"data": {
-              	// 				"type": "FeatureCollection",
-              	// 				"features": [{
-              	// 					"type": "Feature",
-              	// 					"geometry":{
-              	// 						"type": "Point",
-              	// 						"coordinates": [longitude, latitude]
-              	// 					},
-              	// 					"properties":{
-              	// 						"title": "jump1";
-              	// 						"icon": "monument"
-              	// 					}
-              	// 				}]
-              	// 			}
-              	// 		}
-              	// 		"layout":{
-              	// 			"icon-image":"{icon}-15",
-              	// 			"text-field":"{title}",
-              	// 			"text-anchor":"top"
-              	// 		}
-              	// 	});
-              	// });
+              	map.on('load',function(){
+              		map.addLayer({
+              			"id":"points",
+              			"type": "symbol",
+              			"source": {
+              				"type":"geojson",
+              				"data": {
+              					"type": "FeatureCollection",
+              					"features": [{
+              						"type": "Feature",
+              						"geometry":{
+              							"type": "Point",
+              							"coordinates": [longitude, latitude]
+              						},
+              						"properties":{
+              							"title": "jump1";
+              							"icon": "monument"
+              						}
+              					}]
+              				}
+              			}
+              			"layout":{
+              				"icon-image":"{icon}-15",
+              				"text-field":"{title}",
+              				"text-anchor":"top"
+              			}
+              		});
+              	});
               	// showPosition();
              	 // getLocation();
       
