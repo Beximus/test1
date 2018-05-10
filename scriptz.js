@@ -15,13 +15,13 @@ function init(){
 		console.log(latitude,longitude);
 		output.innerHTML = "<p>Your starting latitude is: " + latitude + "<br>Your Starting longitude is: " + longitude +"</p>";
 
-		// mapboxgl.accessToken = 'pk.eyJ1IjoiYmV4aW11cyIsImEiOiJjamc5MG04ZXU5dDhhMnhtczVjeTI5c3kyIn0.m5hg57ASif4CYrkda7Wg_g';
-		// var map = new mapboxgl.Map({
-		//     container: 'map', // container id
-		//     style: 'mapbox://styles/beximus/cjg996x9mermg2srybd501gup', // stylesheet location
-		//     center: [longitude, latitude], // starting position [lng, lat]
-		//     zoom: 14 // starting zoom
-		// });
+		mapboxgl.accessToken = 'pk.eyJ1IjoiYmV4aW11cyIsImEiOiJjamc5MG04ZXU5dDhhMnhtczVjeTI5c3kyIn0.m5hg57ASif4CYrkda7Wg_g';
+		var map = new mapboxgl.Map({
+		    container: 'map', // container id
+		    style: 'mapbox://styles/beximus/cjg996x9mermg2srybd501gup', // stylesheet location
+		    center: [longitude, latitude], // starting position [lng, lat]
+		    zoom: 14 // starting zoom
+		});
 
 		if(window.DeviceOrientationEvent) {
     	window.addEventListener('deviceorientation', function(event) {
