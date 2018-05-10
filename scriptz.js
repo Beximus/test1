@@ -51,7 +51,7 @@ function init(){
             //Create Geolocation if Threshold is hit
             if(r.alpha<-20||r.beta<-20||r.gamma<-20){
             	if(r.alpha>130||r.beta>130||r.gamma>130){
-              	document.body.style.backgroundColor = "red";
+              	document.body.style.color = "blue";
               	// showPosition();
              	 // getLocation();
       
