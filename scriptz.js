@@ -15,7 +15,7 @@ function init(){
 		console.log(latitude,longitude);
 		output.innerHTML = "<p>Your starting latitude is: " + latitude + "<br>Your Starting longitude is: " + longitude +"</p>";
 
-		mapboxgl.accessToken = 'pk.eyJ1IjoiYmV4aW11cyIsImEiOiJjamc5MG04ZXU5dDhhMnhtczVjeTI5c3kyIn0.m5hg57ASif4CYrkda7Wg_g';
+		mapboxgl.accessToken = 'sk.eyJ1IjoiYmV4aW11cyIsImEiOiJjamgxZWlzengwMjlxMndvMXBkZW5lYWhlIn0.CYdc4JkS-O688RrJCkxFTg';
 		var map = new mapboxgl.Map({
 		    container: 'map', // container id
 		    style: 'mapbox://styles/beximus/cjg996x9mermg2srybd501gup', // stylesheet location
